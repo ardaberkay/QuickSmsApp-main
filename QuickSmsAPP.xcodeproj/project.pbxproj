@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3D29BBA2C2B68020089F3BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D29BB92C2B68020089F3BD /* AppDelegate.swift */; };
+		E3D29BBC2C2B68020089F3BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D29BBB2C2B68020089F3BD /* SceneDelegate.swift */; };
+		E3D29BBE2C2B68020089F3BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D29BBD2C2B68020089F3BD /* ViewController.swift */; };
+		E3D29BC12C2B68020089F3BD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E3D29BC02C2B68020089F3BD /* Base */; };
+		E3D29BC32C2B68050089F3BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D29BC22C2B68050089F3BD /* Assets.xcassets */; };
+		E3D29BC62C2B68050089F3BD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E3D29BC52C2B68050089F3BD /* Base */; };
+		E3D29BD12C2B68050089F3BD /* QuickSmsAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D29BD02C2B68050089F3BD /* QuickSmsAPPTests.swift */; };
+		E3D29BDB2C2B68050089F3BD /* QuickSmsAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D29BDA2C2B68050089F3BD /* QuickSmsAPPUITests.swift */; };
+		E3D29BDD2C2B68060089F3BD /* QuickSmsAPPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D29BDC2C2B68060089F3BD /* QuickSmsAPPUITestsLaunchTests.swift */; };
+		E3D29BEC2C2B68570089F3BD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E3D29BEB2C2B68570089F3BD /* Alamofire */; };
+		E3D29BF02C2B68DE0089F3BD /* SmsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D29BEF2C2B68DD0089F3BD /* SmsTemplate.swift */; };
+		E3D29BF22C2B6A290089F3BD /* AddSmsTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D29BF12C2B6A290089F3BD /* AddSmsTemplateViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3D29BCD2C2B68050089F3BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3D29BAE2C2B68020089F3BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3D29BB52C2B68020089F3BD;
+			remoteInfo = QuickSmsAPP;
+		};
+		E3D29BD72C2B68050089F3BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3D29BAE2C2B68020089F3BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3D29BB52C2B68020089F3BD;
+			remoteInfo = QuickSmsAPP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E3D29BB62C2B68020089F3BD /* QuickSmsAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickSmsAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D29BB92C2B68020089F3BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3D29BBB2C2B68020089F3BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E3D29BBD2C2B68020089F3BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3D29BC02C2B68020089F3BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3D29BC22C2B68050089F3BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3D29BC52C2B68050089F3BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3D29BC72C2B68050089F3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3D29BCC2C2B68050089F3BD /* QuickSmsAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickSmsAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D29BD02C2B68050089F3BD /* QuickSmsAPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSmsAPPTests.swift; sourceTree = "<group>"; };
+		E3D29BD62C2B68050089F3BD /* QuickSmsAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickSmsAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D29BDA2C2B68050089F3BD /* QuickSmsAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSmsAPPUITests.swift; sourceTree = "<group>"; };
+		E3D29BDC2C2B68060089F3BD /* QuickSmsAPPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSmsAPPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E3D29BEF2C2B68DD0089F3BD /* SmsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsTemplate.swift; sourceTree = "<group>"; };
+		E3D29BF12C2B6A290089F3BD /* AddSmsTemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSmsTemplateViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3D29BB32C2B68020089F3BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D29BEC2C2B68570089F3BD /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D29BC92C2B68050089F3BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D29BD32C2B68050089F3BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3D29BAD2C2B68020089F3BD = {
+			isa = PBXGroup;
+			children = (
+				E3D29BB82C2B68020089F3BD /* QuickSmsAPP */,
+				E3D29BCF2C2B68050089F3BD /* QuickSmsAPPTests */,
+				E3D29BD92C2B68050089F3BD /* QuickSmsAPPUITests */,
+				E3D29BB72C2B68020089F3BD /* Products */,
+				E3D29BEA2C2B68570089F3BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E3D29BB72C2B68020089F3BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3D29BB62C2B68020089F3BD /* QuickSmsAPP.app */,
+				E3D29BCC2C2B68050089F3BD /* QuickSmsAPPTests.xctest */,
+				E3D29BD62C2B68050089F3BD /* QuickSmsAPPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3D29BB82C2B68020089F3BD /* QuickSmsAPP */ = {
+			isa = PBXGroup;
+			children = (
+				E3D29BB92C2B68020089F3BD /* AppDelegate.swift */,
+				E3D29BBB2C2B68020089F3BD /* SceneDelegate.swift */,
+				E3D29BBD2C2B68020089F3BD /* ViewController.swift */,
+				E3D29BEF2C2B68DD0089F3BD /* SmsTemplate.swift */,
+				E3D29BBF2C2B68020089F3BD /* Main.storyboard */,
+				E3D29BF12C2B6A290089F3BD /* AddSmsTemplateViewController.swift */,
+				E3D29BC22C2B68050089F3BD /* Assets.xcassets */,
+				E3D29BC42C2B68050089F3BD /* LaunchScreen.storyboard */,
+				E3D29BC72C2B68050089F3BD /* Info.plist */,
+			);
+			path = QuickSmsAPP;
+			sourceTree = "<group>";
+		};
+		E3D29BCF2C2B68050089F3BD /* QuickSmsAPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3D29BD02C2B68050089F3BD /* QuickSmsAPPTests.swift */,
+			);
+			path = QuickSmsAPPTests;
+			sourceTree = "<group>";
+		};
+		E3D29BD92C2B68050089F3BD /* QuickSmsAPPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E3D29BDA2C2B68050089F3BD /* QuickSmsAPPUITests.swift */,
+				E3D29BDC2C2B68060089F3BD /* QuickSmsAPPUITestsLaunchTests.swift */,
+			);
+			path = QuickSmsAPPUITests;
+			sourceTree = "<group>";
+		};
+		E3D29BEA2C2B68570089F3BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3D29BB52C2B68020089F3BD /* QuickSmsAPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3D29BE02C2B68060089F3BD /* Build configuration list for PBXNativeTarget "QuickSmsAPP" */;
+			buildPhases = (
+				E3D29BB22C2B68020089F3BD /* Sources */,
+				E3D29BB32C2B68020089F3BD /* Frameworks */,
+				E3D29BB42C2B68020089F3BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3D29BEE2C2B685E0089F3BD /* PBXTargetDependency */,
+			);
+			name = QuickSmsAPP;
+			packageProductDependencies = (
+				E3D29BEB2C2B68570089F3BD /* Alamofire */,
+			);
+			productName = QuickSmsAPP;
+			productReference = E3D29BB62C2B68020089F3BD /* QuickSmsAPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3D29BCB2C2B68050089F3BD /* QuickSmsAPPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3D29BE32C2B68060089F3BD /* Build configuration list for PBXNativeTarget "QuickSmsAPPTests" */;
+			buildPhases = (
+				E3D29BC82C2B68050089F3BD /* Sources */,
+				E3D29BC92C2B68050089F3BD /* Frameworks */,
+				E3D29BCA2C2B68050089F3BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3D29BCE2C2B68050089F3BD /* PBXTargetDependency */,
+			);
+			name = QuickSmsAPPTests;
+			productName = QuickSmsAPPTests;
+			productReference = E3D29BCC2C2B68050089F3BD /* QuickSmsAPPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3D29BD52C2B68050089F3BD /* QuickSmsAPPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3D29BE62C2B68060089F3BD /* Build configuration list for PBXNativeTarget "QuickSmsAPPUITests" */;
+			buildPhases = (
+				E3D29BD22C2B68050089F3BD /* Sources */,
+				E3D29BD32C2B68050089F3BD /* Frameworks */,
+				E3D29BD42C2B68050089F3BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3D29BD82C2B68050089F3BD /* PBXTargetDependency */,
+			);
+			name = QuickSmsAPPUITests;
+			productName = QuickSmsAPPUITests;
+			productReference = E3D29BD62C2B68050089F3BD /* QuickSmsAPPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3D29BAE2C2B68020089F3BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					E3D29BB52C2B68020089F3BD = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					E3D29BCB2C2B68050089F3BD = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = E3D29BB52C2B68020089F3BD;
+					};
+					E3D29BD52C2B68050089F3BD = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = E3D29BB52C2B68020089F3BD;
+					};
+				};
+			};
+			buildConfigurationList = E3D29BB12C2B68020089F3BD /* Build configuration list for PBXProject "QuickSmsAPP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3D29BAD2C2B68020089F3BD;
+			packageReferences = (
+				E3D29BE92C2B68470089F3BD /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = E3D29BB72C2B68020089F3BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3D29BB52C2B68020089F3BD /* QuickSmsAPP */,
+				E3D29BCB2C2B68050089F3BD /* QuickSmsAPPTests */,
+				E3D29BD52C2B68050089F3BD /* QuickSmsAPPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3D29BB42C2B68020089F3BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D29BC32C2B68050089F3BD /* Assets.xcassets in Resources */,
+				E3D29BC62C2B68050089F3BD /* Base in Resources */,
+				E3D29BC12C2B68020089F3BD /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D29BCA2C2B68050089F3BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D29BD42C2B68050089F3BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3D29BB22C2B68020089F3BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D29BBE2C2B68020089F3BD /* ViewController.swift in Sources */,
+				E3D29BF22C2B6A290089F3BD /* AddSmsTemplateViewController.swift in Sources */,
+				E3D29BBA2C2B68020089F3BD /* AppDelegate.swift in Sources */,
+				E3D29BBC2C2B68020089F3BD /* SceneDelegate.swift in Sources */,
+				E3D29BF02C2B68DE0089F3BD /* SmsTemplate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D29BC82C2B68050089F3BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D29BD12C2B68050089F3BD /* QuickSmsAPPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D29BD22C2B68050089F3BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D29BDD2C2B68060089F3BD /* QuickSmsAPPUITestsLaunchTests.swift in Sources */,
+				E3D29BDB2C2B68050089F3BD /* QuickSmsAPPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3D29BCE2C2B68050089F3BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3D29BB52C2B68020089F3BD /* QuickSmsAPP */;
+			targetProxy = E3D29BCD2C2B68050089F3BD /* PBXContainerItemProxy */;
+		};
+		E3D29BD82C2B68050089F3BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3D29BB52C2B68020089F3BD /* QuickSmsAPP */;
+			targetProxy = E3D29BD72C2B68050089F3BD /* PBXContainerItemProxy */;
+		};
+		E3D29BEE2C2B685E0089F3BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E3D29BED2C2B685E0089F3BD /* Alamofire */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3D29BBF2C2B68020089F3BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3D29BC02C2B68020089F3BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3D29BC42C2B68050089F3BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3D29BC52C2B68050089F3BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3D29BDE2C2B68060089F3BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3D29BDF2C2B68060089F3BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3D29BE12C2B68060089F3BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickSmsAPP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ArdaBerkay.QuickSmsAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3D29BE22C2B68060089F3BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickSmsAPP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ArdaBerkay.QuickSmsAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3D29BE42C2B68060089F3BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ArdaBerkay.QuickSmsAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickSmsAPP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QuickSmsAPP";
+			};
+			name = Debug;
+		};
+		E3D29BE52C2B68060089F3BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ArdaBerkay.QuickSmsAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickSmsAPP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QuickSmsAPP";
+			};
+			name = Release;
+		};
+		E3D29BE72C2B68060089F3BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ArdaBerkay.QuickSmsAPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuickSmsAPP;
+			};
+			name = Debug;
+		};
+		E3D29BE82C2B68060089F3BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ArdaBerkay.QuickSmsAPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuickSmsAPP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3D29BB12C2B68020089F3BD /* Build configuration list for PBXProject "QuickSmsAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3D29BDE2C2B68060089F3BD /* Debug */,
+				E3D29BDF2C2B68060089F3BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3D29BE02C2B68060089F3BD /* Build configuration list for PBXNativeTarget "QuickSmsAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3D29BE12C2B68060089F3BD /* Debug */,
+				E3D29BE22C2B68060089F3BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3D29BE32C2B68060089F3BD /* Build configuration list for PBXNativeTarget "QuickSmsAPPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3D29BE42C2B68060089F3BD /* Debug */,
+				E3D29BE52C2B68060089F3BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3D29BE62C2B68060089F3BD /* Build configuration list for PBXNativeTarget "QuickSmsAPPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3D29BE72C2B68060089F3BD /* Debug */,
+				E3D29BE82C2B68060089F3BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E3D29BE92C2B68470089F3BD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E3D29BEB2C2B68570089F3BD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3D29BE92C2B68470089F3BD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E3D29BED2C2B685E0089F3BD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3D29BE92C2B68470089F3BD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E3D29BAE2C2B68020089F3BD /* Project object */;
+}
